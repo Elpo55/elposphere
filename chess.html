@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Elpo-Chess | ElpoSphere</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.3/chess.min.js"></script>
+</head>
+<body>
+    <div class="grid-background"></div>
+    <nav>
+        <div class="logo">ELPO<span>CHESS</span></div>
+        <a href="index.html" style="color:var(--primary); text-decoration:none;">← Retour</a>
+    </nav>
+
+    <main class="container">
+        <div class="card" style="width: 450px; margin: auto;">
+            <div id="myBoard" style="width: 400px"></div>
+            <p id="status">À vous de jouer (Blancs)</p>
+            <button class="btn-elpo" onclick="resetGame()">Recommencer</button>
+        </div>
+    </main>
+
+    <script src="chess-logic.js"></script>
+</body>
+</html>
