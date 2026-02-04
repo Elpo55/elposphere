@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Elpo-Brain | IA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #chat { height: 300px; overflow-y: auto; border: 1px solid var(--glass); padding: 10px; margin-bottom: 10px; }
+        input { width: 70%; padding: 10px; background: #111; color: white; border: 1px solid var(--primary); }
+    </style>
+</head>
+<body>
+    <div class="grid-background"></div>
+    <div class="container">
+        <h1>🧠 Elpo-Brain</h1>
+        <div id="chat"></div>
+        <input type="text" id="user-input" placeholder="Pose-moi une question...">
+        <button class="btn-elpo" onclick="askMistral()">Envoyer</button>
+    </div>
+    <script src="brain.js"></script>
+</body>
+</html>
