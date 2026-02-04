@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Arcade | ElpoSphere</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-background"></div>
+    <nav>
+        <div class="logo">ELPO<span>ARCADE</span></div>
+        <a href="index.html" class="btn-elpo">Retour</a>
+    </nav>
+    <main class="container">
+        <div class="card" onclick="startPong()"><h3>🏓 Pong</h3><p>Vitesse néon</p></div>
+        <div class="card" onclick="startSnake()"><h3>🐍 Snake</h3><p>Classique Retro</p></div>
+        <div class="card" onclick="startPacman()"><h3>🍕 Pacman</h3><p>Bientôt disponible</p></div>
+        <div class="card" onclick="startTetris()"><h3>🧱 Tetris</h3><p>Bientôt disponible</p></div>
+        <canvas id="gameCanvas" width="400" height="400" style="border: 2px solid var(--primary); margin-top: 20px; display:none;"></canvas>
+    </main>
+    </body>
+</html>
