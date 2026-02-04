@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Elpo-Chess | ElpoSphere</title>
+    <title>Oasis | Chess</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/@chrisoakman/chessboardjs@1.0.0/dist/chessboard-1.0.0.min.css">
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
@@ -12,15 +12,26 @@
 <body>
     <div class="grid-background"></div>
     <nav>
-        <div class="logo">ELPO<span>CHESS</span></div>
+        <div class="logo">OA<span>SIS</span></div>
         <a href="index.html" style="color:var(--primary); text-decoration:none;">← Retour</a>
     </nav>
 
     <main class="container">
-        <div class="card" style="width: 450px; margin: auto;">
-            <div id="myBoard" style="width: 400px"></div>
-            <p id="status">À vous de jouer (Blancs)</p>
-            <button class="btn-elpo" onclick="resetGame()">Recommencer</button>
+        <div id="setup-menu" class="card" style="max-width: 400px; margin: auto; text-align: center;">
+            <h3>Configuration de la partie</h3>
+            <label for="bot-level">Niveau du Bot :</label><br><br>
+            <select id="bot-level" style="padding: 10px; background: #222; color: white; border: 1px solid var(--primary); border-radius: 5px;">
+                <option value="0">Débutant (Hasard)</option>
+                <option value="1">Intermédiaire (Capture)</option>
+            </select>
+            <br><br>
+            <button class="btn-elpo" onclick="startGame()">Lancer la simulation</button>
+        </div>
+
+        <div id="game-area" style="display:none; text-align: center;">
+            <div id="myBoard" style="width: 400px; margin: auto;"></div>
+            <p id="status" class="highlight">À vous de jouer</p>
+            <button class="btn-elpo" onclick="location.reload()">Réinitialiser</button>
         </div>
     </main>
 

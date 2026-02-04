@@ -1,5 +1,5 @@
 async function askMistral() {
-    const key = 'TA_CLE_MISTRAL';
+    const key = 'ag_019c2997c12971d58b4b8186c2902e2b';
     const input = document.getElementById('user-input');
     const chat = document.getElementById('chat');
     
