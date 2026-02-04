@@ -12,11 +12,18 @@
         <a href="index.html" class="btn-elpo">Retour</a>
     </nav>
     <main class="container">
-        <div class="card" onclick="startPong()"><h3>🏓 Pong</h3><p>Vitesse néon</p></div>
-        <div class="card" onclick="startSnake()"><h3>🐍 Snake</h3><p>Classique Retro</p></div>
-        <div class="card" onclick="startPacman()"><h3>🍕 Pacman</h3><p>Bientôt disponible</p></div>
-        <div class="card" onclick="startTetris()"><h3>🧱 Tetris</h3><p>Bientôt disponible</p></div>
-        <canvas id="gameCanvas" width="400" height="400" style="border: 2px solid var(--primary); margin-top: 20px; display:none;"></canvas>
-    </main>
+    <div class="card-grid">
+        <div class="card" onclick="loadGame('pong')"><h3>🏓 Pong</h3></div>
+        <div class="card" onclick="loadGame('snake')"><h3>🐍 Snake</h3></div>
+        <div class="card" onclick="loadGame('pacman')"><h3>🍕 Pacman</h3></div>
+        <div class="card" onclick="loadGame('tetris')"><h3>🧱 Tetris</h3></div>
+    </div>
+    
+    <div id="game-container" style="display:none; margin-top:30px;">
+        <canvas id="canvas" width="400" height="400"></canvas>
+        <br>
+        <button class="btn-elpo" onclick="closeGame()">Fermer le jeu</button>
+    </div>
+</main>
     </body>
 </html>
