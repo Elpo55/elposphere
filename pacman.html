@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Pacman | ElpoSphere</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #pacmanCanvas { display: block; margin: 20px auto; border: 2px solid var(--primary); background: #000; }
+        .score { text-align: center; font-weight: bold; font-size: 24px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="grid-background"></div>
+    <nav>
+        <a href="index.html" class="btn-elpo">← Retour</a>
+        <div class="logo">PACMAN</div>
+        <div style="width: 80px;"></div>
+    </nav>
+    <main class="container" style="max-width: 500px;">
+        <div class="card">
+            <h3>🍕 Pacman</h3>
+            <div class="score">Points: <span id="pacmanScore">0</span></div>
+            <canvas id="pacmanCanvas" width="400" height="400"></canvas>
+            <p style="text-align: center; margin: 15px 0;">Flèches pour bouger | Récoltez les pastilles</p>
+            <button class="btn-elpo" onclick="resetPacman()">Recommencer</button>
+        </div>
+    </main>
+    <script src="pacman.js"></script>
+</body>
+</html>

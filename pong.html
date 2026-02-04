@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Pong | ElpoSphere</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #pongCanvas { display: block; margin: 20px auto; border: 2px solid var(--primary); background: #000; }
+        .game-info { text-align: center; margin: 20px 0; font-size: 18px; }
+        .score { display: flex; justify-content: space-around; margin: 20px 0; font-weight: bold; font-size: 24px; }
+    </style>
+</head>
+<body>
+    <div class="grid-background"></div>
+    <nav>
+        <a href="index.html" class="btn-elpo">← Retour</a>
+        <div class="logo">PONG</div>
+        <div style="width: 80px;"></div>
+    </nav>
+    <main class="container" style="max-width: 600px;">
+        <div class="card">
+            <h3>🏓 Pong</h3>
+            <div class="score">
+                <div>Vous: <span id="playerScore">0</span></div>
+                <div>IA: <span id="aiScore">0</span></div>
+            </div>
+            <canvas id="pongCanvas" width="500" height="300"></canvas>
+            <p class="game-info">Utilisez les flèches ↑↓ ou ZQSD pour bouger</p>
+            <button class="btn-elpo" onclick="resetPong()">Recommencer</button>
+        </div>
+    </main>
+    <script src="pong.js"></script>
+</body>
+</html>

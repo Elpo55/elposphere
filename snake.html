@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Snake | ElpoSphere</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #snakeCanvas { display: block; margin: 20px auto; border: 2px solid var(--primary); background: #000; }
+        .game-info { text-align: center; margin: 20px 0; font-size: 18px; }
+        .score { text-align: center; font-weight: bold; font-size: 24px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="grid-background"></div>
+    <nav>
+        <a href="index.html" class="btn-elpo">← Retour</a>
+        <div class="logo">SNAKE</div>
+        <div style="width: 80px;"></div>
+    </nav>
+    <main class="container" style="max-width: 500px;">
+        <div class="card">
+            <h3>🐍 Snake</h3>
+            <div class="score">Score: <span id="snakeScore">0</span></div>
+            <canvas id="snakeCanvas" width="400" height="400"></canvas>
+            <p class="game-info">Utilisez les flèches pour vous déplacer</p>
+            <button class="btn-elpo" onclick="resetSnake()">Recommencer</button>
+        </div>
+    </main>
+    <script src="snake.js"></script>
+</body>
+</html>

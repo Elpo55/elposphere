@@ -8,22 +8,15 @@
 <body>
     <div class="grid-background"></div>
     <nav>
-        <div class="logo">ELPO<span>ARCADE</span></div>
-        <a href="index.html" class="btn-elpo">Retour</a>
+        <a href="index.html" class="btn-elpo">← Retour</a>
+        <div class="logo" style="flex: 1; text-align: center;">ELPO<span>ARCADE</span></div>
+        <div style="width: 80px;"></div>
     </nav>
     <main class="container">
-    <div class="card-grid">
-        <div class="card" onclick="loadGame('pong')"><h3>🏓 Pong</h3></div>
-        <div class="card" onclick="loadGame('snake')"><h3>🐍 Snake</h3></div>
-        <div class="card" onclick="loadGame('pacman')"><h3>🍕 Pacman</h3></div>
-        <div class="card" onclick="loadGame('tetris')"><h3>🧱 Tetris</h3></div>
-    </div>
-    
-    <div id="game-container" style="display:none; margin-top:30px;">
-        <canvas id="canvas" width="400" height="400"></canvas>
-        <br>
-        <button class="btn-elpo" onclick="closeGame()">Fermer le jeu</button>
-    </div>
-</main>
-    </body>
+        <a href="pong.html" class="card"><h3>🏓 Pong</h3><p>Affrontez l'IA au Pong</p></a>
+        <a href="snake.html" class="card"><h3>🐍 Snake</h3><p>Le classique: mangez et grandissez</p></a>
+        <a href="pacman.html" class="card"><h3>🍕 Pacman</h3><p>Collectez les pastilles</p></a>
+        <a href="tetris.html" class="card"><h3>🧱 Tetris</h3><p>Empilez les blocs</p></a>
+    </main>
+</body>
 </html>

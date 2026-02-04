@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris | ElpoSphere</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        #tetrisCanvas { display: block; margin: 20px auto; border: 2px solid var(--primary); background: #000; }
+        .game-info { text-align: center; margin: 20px 0; }
+        .score { text-align: center; font-weight: bold; font-size: 24px; margin: 20px 0; }
+    </style>
+</head>
+<body>
+    <div class="grid-background"></div>
+    <nav>
+        <a href="index.html" class="btn-elpo">← Retour</a>
+        <div class="logo">TETRIS</div>
+        <div style="width: 80px;"></div>
+    </nav>
+    <main class="container" style="max-width: 500px;">
+        <div class="card">
+            <h3>🧱 Tetris</h3>
+            <div class="score">Lignes: <span id="tetrisScore">0</span></div>
+            <canvas id="tetrisCanvas" width="200" height="400"></canvas>
+            <p class="game-info">← → pour bouger | ↓ pour accélérer | Espace pour tourner</p>
+            <button class="btn-elpo" onclick="resetTetris()">Recommencer</button>
+        </div>
+    </main>
+    <script src="tetris.js"></script>
+</body>
+</html>
