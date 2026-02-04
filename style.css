@@ -107,3 +107,27 @@ h1, h2, h3 {
 }
 
 /* ... existing responsive styles ... */
+
+/* Adaptations pour Mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+        grid-template-columns: 1fr; /* Une seule colonne sur mobile */
+    }
+
+    nav {
+        padding: 10px 20px;
+        flex-direction: column; /* Logo au-dessus de l'heure */
+        gap: 10px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    /* Ajustement de l'échiquier pour qu'il ne dépasse pas */
+    #myBoard {
+        width: 90vw !important; /* 90% de la largeur de l'écran */
+        height: 90vw !important;
+    }
+}
