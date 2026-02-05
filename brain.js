@@ -1,4 +1,4 @@
-const API_KEY = 'HkBXOSCodzq3rXTV 45Y5PiE4bTAfMs93';
+const API_KEY = 'HkBXOSCodzq3rXTV45Y5PiE4bTAfMs93';
 let conversationHistory = [];
 
 function createMessage(content, isUser) {
